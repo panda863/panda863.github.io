@@ -280,7 +280,7 @@ li {
 
 .top_img_container {
   position: relative;
-  background-image: url(../img/top_image.jpg);
+  background-image: url(../top_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -537,7 +537,7 @@ li {
       margin: 0 auto; } }
   @media screen and (min-width: 901px) {
     #offer .left_img {
-      background-image: url(../img/offer.jpg);
+      background-image: url(../offer.jpg);
       background-repeat: no-repeat;
       height: 400px;
       width: 65%;
@@ -552,7 +552,7 @@ li {
         position: relative; } }
     @media screen and (max-width: 900px) {
       #offer .right_text {
-        background-image: url(../img/offer.jpg);
+        background-image: url(../offer.jpg);
         background-repeat: no-repeat;
         width: 100%;
         height: 400px;
