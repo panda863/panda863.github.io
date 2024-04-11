@@ -512,7 +512,7 @@ li {
       padding: 10px 0;
       padding-left: 20px; }
       .price_list .price_card ul li::before {
-        content: url(../img/check-box.png);
+        content: url(check-box.png);
         display: inline-block;
         transform: scale(0.2);
         position: absolute;
