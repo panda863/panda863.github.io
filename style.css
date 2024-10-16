@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 13px/1.4 "メイリオ", "Meiryo", arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  color: #252525;
+  background: #fff url(images/bg.png) repeat-x 0 110px;
+}
+
+a {
+  color: #1c5ba1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5583ce;
+}
+
+a:active,
+a:focus {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/*************
+全体
+*************/
+#wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 910px;
+}
+
+/*************
+/* ヘッダー
+*************/
+#header {
+  background: url(images/header.png) no-repeat 100% 20px;
+  height: 110px;
+  position: relative;
+}
+
+#header h1 {
+  padding: 5px 0 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#header a {
+  position: absolute;
+  top: 25px;
+}
+
+/*************
+/* トップナビゲーション
+*************/
+ul#topnav {
+  width: 910px;
+  height: 46px;
+  margin-bottom: 20px;
+  background: url(images/topnav.png) no-repeat 0 0;
+}
+
+ul#topnav li {
+  float: left;
+  list-style: none;
+  width: 130px;
+}
+
+ul#topnav a {
+  text-indent: -9999px;
+  text-decoration: none;
+  display: block;
+  width: 130px;
+  height: 46px;
+  background: url(images/topnav.png) no-repeat;
+}
+
+ul#topnav a#home {
+  background-position: 0 0;
+}
+
+ul#topnav a#about {
+  background-position: -130px 0;
+}
+
+ul#topnav a#menu {
+  background-position: -260px 0;
+}
+
+ul#topnav a#faq {
+  background-position: -390px 0;
+}
+
+ul#topnav a#map {
+  background-position: -520px 0;
+}
+
+ul#topnav a#blog {
+  background-position: -650px 0;
+}
+
+ul#topnav a#link {
+  background-position: -780px 0;
+}
+
+ul#topnav a#home:hover,
+ul#topnav li.active a#home {
+  background-position: 0 -46px;
+}
+
+ul#topnav a#about:hover,
+ul#topnav li.active a#about {
+  background-position: -130px -46px;
+}
+
+ul#topnav a#menu:hover,
+ul#topnav li.active a#menu {
+  background-position: -260px -46px;
+}
+
+ul#topnav a#faq:hover,
+ul#topnav li.active a#faq {
+  background-position: -390px -46px;
+}
+
+ul#topnav a#map:hover,
+ul#topnav li.active a#map {
+  background-position: -520px -46px;
+}
+
+ul#topnav a#blog:hover,
+ul#topnav li.active a#blog {
+  background-position: -650px -46px;
+}
+
+ul#topnav a#link:hover,
+ul#topnav li.active a#link {
+  background-position: -780px -46px;
+}
+
+li.active a#home {
+  background-position: 0 -42px;
+}
+
+li.active a#guide {
+  background-position: -213px -42px;
+}
+
+li.active a#faq {
+  background-position: -429px -42px;
+}
+
+li.active a#mp {
+  background-position: -573px -42px;
+}
+
+
+/*************
+メイン（右側）コンテンツ
+*************/
+#main {
+  float: right;
+  width: 618px;
+  padding: 15px 0;
+  display: inline;
+}
+
+#main .bannerM img {
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+#main .bannerM img.last {
+  padding-right: 0;
+}
+
+#main h2,
+#main h3 {
+  margin-bottom: 10px;
+  padding: 2px 10px 0 20px;
+  line-height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  background: url(images/heading.png) no-repeat;
+}
+
+
+#main p {
+  padding: 15px 15px 15px 20px;
+}
+
+/* 画像を右に回りこみ */
+#main p.withImage {
+  width: 598px;
+  margin: 20px 0 0 10px;
+  padding: 5px 0;
+}
+
+#main p.withImage img {
+  float: right;
+  margin-left: .5em;
+}
+
+#date {
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: #0ea7a0;
+}
+
+#next {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* フッター共通 */
+.box {
+  float: left;
+  width: 195px;
+  margin: 20px 16px 10px 0;
+  line-height: 1.2;
+}
+
+.box_img {
+  padding: 0px 0px 10px 0px;
+}
+
+.last {
+  margin-right: 0;
+}
+
+
+/* ボタン */
+p.button {
+  text-align: center;
+  padding: 10px 0;
+}
+
+p.button a {
+  display: block;
+  line-height: 32px;
+  background: #ffffff url(images/button.png) no-repeat;
+  margin: 0 -20px;
+}
+
+p.button a,
+p.button a:hover {
+  color: #fff;
+}
+
+p.button a:hover {
+  cursor: pointer;
+  background-position: 0 -32px;
+}
+
+/* メインとフッターのリスト位置調節 */
+#main ul,
+#footer ul {
+  margin-left: 20px;
+}
+
+#main li,
+#footer li {
+  margin-bottom: 3px;
+}
+
+
+/*************
+サイド（左側）コンテンツ
+*************/
+#sidebar {
+  float: left;
+  width: 265px;
+  padding: 15px 0;
+}
+
+#sidebar p {
+  margin-bottom: 20px;
+}
+
+#sidebar h3 {
+  margin-top: 5px;
+  padding: 2px 10px 0 20px;
+  line-height: 35px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #252525;
+  background: url(images/heading2.png) no-repeat;
+}
+
+#sidebar ul {
+  margin-left: 5px;
+  padding: 10px 0;
+}
+
+#sidebar li {
+  margin: 5px 10px 10px 0;
+  list-style: none;
+  border-bottom: 1px solid #efefef;
+}
+
+#sidebar li a {
+  background: url(images/list.png) no-repeat 0 50%;
+  display: block;
+  padding: 2px 0 2px 20px;
+}
+
+
+/*************
+/* フッター
+*************/
+#footer {
+  clear: both;
+  padding: 10px 0 10px;
+  border-top: 1px solid #cccccc;
+}
+
+#footer .inner {
+  overflow: hidden;
+}
+
+* html #footer .inner {
+  height: 1%;
+}
+
+#footer li {
+  margin: 0 10px 10px 5px;
+  list-style: none;
+}
+
+#footer li a {
+  background: url(images/list.png) no-repeat 0 50%;
+  display: block;
+  padding-left: 20px;
+  line-height: 20px;
+}
+
+#footer #logo {
+  float: left;
+  padding: 10px 0 5px;
+  width: 292px;
+}
+
+address {
+  padding: 20px 0 3px;
+  text-align: center;
+  font-style: normal;
+  font-size: 12px;
+  clear: both;
+  display: block;
+}
